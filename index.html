@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" class="input" id="input"/>
+        <div class="buttons">
+          <div class="operators">
+              <div onclick="displayValue('+')">+</div>
+              <div onclick="displayValue('-')">-</div>
+              <div onclick="displayValue('*')">&times;</div>
+              <div onclick="displayValue('/')">&divide;</div>
+            </div>
+            <div class="leftPanel">
+            <div class="numbers">
+              <div onclick="displayValue('7')">7</div>
+              <div onclick="displayValue('8')">8</div>
+              <div onclick="displayValue('9')">9</div>
+            </div>
+            <div class="numbers">
+              <div onclick="displayValue('4')">4</div>
+              <div onclick="displayValue('5')">5</div>
+              <div onclick="displayValue('6')">6</div>
+            </div>
+            <div class="numbers">
+              <div onclick="displayValue('1')">1</div>
+              <div onclick="displayValue('2')">2</div>
+              <div onclick="displayValue('3')">3</div>
+            </div>
+            <div class="numbers">
+              <div onclick="displayValue('0')">0</div>
+              <div onclick="displayValue('.')">.</div>
+              <div id="clear" onclick="Clear()">C</div>
+            </div>
+        </div>
+        <div class="equal" id="result" onclick="displayResult()">=</div>
+    </div>
+    <div class="backspace" onclick="Backspace()">◀</div>
+      </div>
+
+
+      <script src="./app.js"></script>
+</body>
+</html>
